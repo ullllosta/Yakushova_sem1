@@ -14,32 +14,32 @@ class Main(tk.Frame):
         self.view_records()
 
     def init_main(self):
-        toolbar = tk.Frame(bg='#ecd8e9', bd=4)
+        toolbar = tk.Frame(bg='#76567D', bd=4)
         toolbar.pack(side=tk.TOP, fill=tk.X)
 
         self.add_img = tk.PhotoImage(file="11.gif")
-        self.btn_open_dialog = tk.Button(toolbar, text='Добавить клиента', command=self.open_dialog, bg='#c38bbf', width=184, bd=0,
+        self.btn_open_dialog = tk.Button(toolbar, text='Добавить клиента', command=self.open_dialog, bg='#D7C1E3', width=184, bd=0,
                                     compound=tk.TOP, image=self.add_img)
         self.btn_open_dialog.pack(side=tk.LEFT)
 
         self.update_img = tk.PhotoImage(file="12.gif")
-        btn_edit_dialog = tk.Button(toolbar, text="Редактировать", command=self.open_update_dialog, bg='#c38bbf', width=184,
+        btn_edit_dialog = tk.Button(toolbar, text="Редактировать", command=self.open_update_dialog, bg='#D7C1E3', width=184,
                                     bd=0, compound=tk.TOP, image=self.update_img)
         btn_edit_dialog.pack(side=tk.LEFT)
 
         self.delete_img = tk.PhotoImage(file="13.gif")
-        btn_delete = tk.Button(toolbar, text="Удалить запись", command=self.delete_records, bg='#c38bbf', width=184,
+        btn_delete = tk.Button(toolbar, text="Удалить запись", command=self.delete_records, bg='#D7C1E3', width=184,
                                bd=0, compound=tk.TOP, image=self.delete_img)
         btn_delete.pack(side=tk.LEFT)
 
         self.search_img = tk.PhotoImage(file="14.gif")
         btn_search = tk.Button(toolbar, text="Поиск записи",
-                               command=self.open_search_dialog, bg='#c38bbf', width=184,
+                               command=self.open_search_dialog, bg='#D7C1E3', width=184,
                                bd=0, compound=tk.TOP, image=self.search_img)
         btn_search.pack(side=tk.LEFT)
 
         self.refresh_img = tk.PhotoImage(file="15.gif")
-        btn_refresh = tk.Button(toolbar, text="Обновить экран", command=self.view_records, bg='#c38bbf', width=184,
+        btn_refresh = tk.Button(toolbar, text="Обновить экран", command=self.view_records, bg='#D7C1E3', width=184,
                                 bd=0, compound=tk.TOP, image=self.refresh_img)
         btn_refresh.pack(side=tk.LEFT)
 
